@@ -4,15 +4,19 @@ import Link from 'next/link';
 const links = [
   {
     name: 'Sobre mi',
-    route: '/aboutme'
+    route: 'aboutme'
+  },
+  {
+    name: 'Skills',
+    route: 'skills'
   },
   {
     name: 'Proyectos',
-    route: '/projects'
+    route: 'projects'
   },
   {
     name: 'Contacto',
-    route: '/contact'
+    route: 'contact'
   }
 ]
 
@@ -25,7 +29,7 @@ const Navegacion = () => {
           {
             links.map(link => (
               <li key={link.name}>
-                <Link href={link.route}>
+                <Link href={`#${link.route}`}>
                   {link.name}
                 </Link>
               </li>
@@ -39,7 +43,7 @@ const Navegacion = () => {
           autoPlay={true}
           muted
           loop
-          
+
         ></video>
       </div>
     </div>
