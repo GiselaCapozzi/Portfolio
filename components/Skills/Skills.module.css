@@ -1,6 +1,120 @@
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px auto;
+}
+
+.titulo {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #5F7066;
+  font-weight: bold;
+}
+
+.container_tarjeta {
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin: 150px 0;
+  flex-wrap: wrap;
+  width: 70vw;
+  height: 70vh;
+}
+
+.logo_card {
+  margin-bottom: 30px;
+  /* width: 90px;
+  height: 100px; */
+}
+
+.container_card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
+  padding: 15px;
+  border-bottom: 5px solid #BDBBB6;
+  border-radius: 7px;
+  width: 90px;
+  height: 100px;
+  aspect-ratio: 1;
+  text-align: center;
+  background-color: #BDBBB6;
+  box-shadow: 7px 7px 5px #A0A99F;
+  color: #242525;
+}
+
+.container_card:hover {
+  width: 90px;
+  height: 100px;
+  opacity: 100%;
+  transition: 1s all;
+  border-radius: 15px;
+}
+
+.nombre_card {
+  margin-bottom: 5px;
+  position: absolute;
+  margin-top: 140px;
+  /* top: 90px; */
+  opacity: 0%;
+  width: 90px;
+  height: 80px;
+}
+
+.nombre_card:hover {
+  opacity: 100%;
+}
+
+@media (max-width: 592px) {
+  .container {
+    margin: 30px auto;
+  }
+  
+  .titulo {
+    font-size: 20px;
+  }
+  
+  .container_tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 70vh;
+  }
+  
+  .container_card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+    padding: 15px;
+    border-bottom: 5px solid #BDBBB6;
+    border-radius: 7px;
+    width: 80px;
+    height: 90px;
+    aspect-ratio: 1;
+    text-align: center;
+    background-color: #839788;
+    box-shadow: 7px 7px 5px #A0A99F;
+    color: #F5E4D7;
+  }
+  
+  .container_card:hover {
+    width: 90px;
+    height: 100px;
+    opacity: 100%;
+    transition: 1s all;
+    border-radius: 15px;
+  }
+  
+  .nombre_card {
+    margin-bottom: 5px;
+  } 
 }
