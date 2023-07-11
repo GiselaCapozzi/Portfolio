@@ -73,3 +73,19 @@ export const skills = [
     imagen: Express,
   }
 ];
+
+export const proyectos = [
+  {
+    id: 1,
+    nombre: 'Cosmos Libreria',
+    url: 'https://cosmoslibreria.netlify.app',
+    repo: 'https://github.com/GiselaCapozzi/proyectoLibreria_Reactjs',
+    lenguajes: [
+      skills[0], 
+      skills[2], 
+      skills[3], 
+      skills[4], 
+      skills[5], 
+      skills[7]]
+  }
+]

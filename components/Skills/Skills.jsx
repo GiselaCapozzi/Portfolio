@@ -1,4 +1,4 @@
-import { skills } from '@/data/skills';
+import { skills } from '@/data/data';
 import styles from './Skills.module.css';
 import Image from 'next/image';
 

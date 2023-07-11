@@ -15,10 +15,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={font.className}>
         <Navegacion />
+        {children}
         <AboutMe />
         <Skills />
         <Proyectos />
-        {children}
       </body>
     </html>
   )
