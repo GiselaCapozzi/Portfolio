@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 80px;
-  height: 130vh;
+  margin-top: 320px;
+  height: auto;
 }
 
 .foto {
@@ -80,9 +80,22 @@
   font-size: 10px;
 }
 
+.curriculum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200vw;
+  margin-top: 20px;
+}
+
+.curriculum img {
+  width: 55vw;
+  height: 140vh;
+}
+
 @media (max-width: 592px) {
   .container {
-    margin-top: 250px;
+    margin-top: 750px;
     height: 40vh;
   }
 
@@ -127,5 +140,14 @@
     /* align-items: center; */
     justify-content: space-around;
     margin: 12px;
+  }
+
+  .curriculum {
+    width: 100vw;
+  }
+  
+  .curriculum img {
+    width: 85vw;
+    height: 90vh;
   }
 }
