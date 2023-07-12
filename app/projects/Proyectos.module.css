@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 200px 0 0 0;
+  margin-top: 320px;
   height: auto;
 }
 
@@ -33,7 +33,7 @@
   justify-content: center;
   flex-direction: column;
   width: 450px;
-  height: 250px;
+  height: 350px;
   background-color: var(--color-fondo-tarjeta);
   border-radius: 50px;
   box-shadow: 7px 7px 5px #A0A99F;
@@ -49,7 +49,7 @@
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
   background-color: #E5D1D090;
   padding: 12px;
 }
@@ -89,8 +89,7 @@
 
 @media (max-width: 592px) {
   .container {
-    margin: 750px 0 0 0;
-    height: auto;
+    margin-top: 180px;
   }
 
   .titulo {
@@ -104,7 +103,8 @@
 
   .card_proyecto {
     width: 800px;
-    height: 250px;
+    height: 320px;
+    padding: 0 12px;
   }
 
   .portada {

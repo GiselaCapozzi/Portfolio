@@ -3,7 +3,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 100px 0;
+  height: 150vh;
+  margin-top: 150px;
 }
 
 .titulo {
@@ -24,8 +25,6 @@
 
 .logo_card {
   margin-bottom: 30px;
-  /* width: 90px;
-  height: 100px; */
 }
 
 .container_card {
@@ -38,11 +37,12 @@
   padding: 15px;
   border-bottom: 5px solid #BDBBB6;
   border-radius: 7px;
+  transition: border-radius 1s linear;
   width: 90px;
   height: 100px;
   aspect-ratio: 1;
   text-align: center;
-  background-color: #BDBBB6;
+  background-color: #d6d4d0;
   box-shadow: 7px 7px 5px #A0A99F;
   color: #242525;
 }
@@ -51,8 +51,7 @@
   width: 90px;
   height: 100px;
   opacity: 100%;
-  transition: 1s all;
-  border-radius: 15px;
+  border-radius: 50px;
 }
 
 .nombre_card {
@@ -70,7 +69,8 @@
 
 @media (max-width: 592px) {
   .container {
-    margin: 75px 0;
+    height: auto;
+    margin-top: 200px;
   }
 
   .container_tarjeta {
@@ -89,7 +89,6 @@
     width: 90px;
     height: 100px;
     text-align: center;
-    background-color: #BDBBB6;
     box-shadow: 7px 7px 5px #A0A99F;
     color: #242525;
     margin: 12px;
@@ -98,9 +97,8 @@
   .container_card:hover {
     width: 90px;
     height: 100px;
-    opacity: 100%;
-    transition: 1s all;
-    border-radius: 30px;
+    border-radius: 50px;
+    transition: border-radius 1s linear;
   }
 
   .nombre_card {

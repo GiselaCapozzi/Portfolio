@@ -58,11 +58,11 @@
 .links li a {
   color: white;
   text-decoration: none;
+  transition: color .5s linear;
 }
 
 .links>li a:hover {
   text-decoration: underline;
-  transition: .5s all;
   color: #BDBBB6;
   cursor: pointer;
 }

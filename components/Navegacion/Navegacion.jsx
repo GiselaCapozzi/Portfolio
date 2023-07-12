@@ -3,20 +3,24 @@ import Link from 'next/link';
 
 const links = [
   {
-    name: 'Sobre mi',
-    route: 'aboutme'
+    name: 'Home',
+    route: '/',
   },
   {
-    name: 'Skills',
-    route: 'skills'
+    name: 'Sobre mi',
+    route: '/acerca'
+  },
+  {
+    name: 'skills',
+    route: '/skills'
   },
   {
     name: 'Proyectos',
-    route: 'projects'
+    route: '/projects'
   },
   {
     name: 'Contacto',
-    route: 'contact'
+    route: '/contact'
   }
 ]
 
@@ -29,7 +33,7 @@ const Navegacion = () => {
           {
             links.map(link => (
               <li key={link.name}>
-                <Link href={`#${link.route}`}>
+                <Link href={link.route}>
                   {link.name}
                 </Link>
               </li>

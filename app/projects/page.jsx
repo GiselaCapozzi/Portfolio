@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Proyectos = () => {
   return (
-    <div className={`${styles.container}`} id='projects'>
+    <div className={`${styles.container}`}>
       <div className={`${styles.container_titulo}`}>
         <h1 className={`${styles.titulo}`}>Proyectos</h1>
       </div>
@@ -23,8 +23,8 @@ const Proyectos = () => {
                   alt={proyecto.id}
                   className={`${styles.portada}`}
                 />
+                <h3 className={`${styles.titulo_proyecto}`}>{proyecto.nombre}</h3>
                 <div className={`${styles.container_lenguajes}`}>
-                  <h3 className={`${styles.titulo_proyecto}`}>{proyecto.nombre}</h3>
                   <div>
                     {
                       proyecto.lenguajes.map((lenguaje, index) => (
