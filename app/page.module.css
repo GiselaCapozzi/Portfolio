@@ -89,8 +89,8 @@
 }
 
 .curriculum img {
-  width: 70px;
-  height: 140px;
+  width: 55vw;
+  height: 140vh;
 }
 
 @media (max-width: 592px) {
@@ -147,7 +147,7 @@
   }
   
   .curriculum img {
-    width: 85px;
-    height: 90px;
+    width: 85vw;
+    height: 90vh;
   }
 }
