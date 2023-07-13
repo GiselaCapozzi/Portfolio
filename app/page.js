@@ -5,7 +5,7 @@ import foto from '../assets/fotoChica.jpg';
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
 import cv from '../assets/cv_102350.png';
-import cv_pdf from '../assets/CV/Gisela capozzi.png';
+import curriculum from '../assets/Gisela capozzi.png';
 
 export default function Home() {
   return (
@@ -50,7 +50,7 @@ export default function Home() {
       </div>
       <div className={`${styles.curriculum}`}>
         <Image 
-          src={cv_pdf}
+          src={curriculum}
           alt='curriculum'
         />
       </div>
