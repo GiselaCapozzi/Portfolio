@@ -5,7 +5,7 @@ import foto from '../assets/fotoChica.jpg';
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
 import cv from '../assets/cv_102350.png';
-import cv_pdf from '../assets/CV/Gisela capozzi.jpg';
+import cv_pdf from '../assets/CV/Gisela capozzi.png';
 
 export default function Home() {
   return (
