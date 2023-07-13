@@ -10,6 +10,12 @@ import Mysql from '../assets/mysql.png';
 import Node from '../assets/node.png';
 import Git from '../assets/git.png';
 import Express from '../assets/express.png';
+import Telefono from '../assets/phone.png';
+import Email from '../assets/email.png';
+import Github from '../assets/github.png';
+import Linkedin from '../assets/linkedin.png';
+
+
 
 export const skills = [
   {
@@ -87,5 +93,28 @@ export const proyectos = [
       skills[4], 
       skills[5], 
       skills[7]]
+  }
+];
+
+export const contactos = [
+  {
+    id: 1,
+    contacto: '1160006045',
+    logo: Telefono
+  },
+  {
+    id: 2,
+    contacto: 'gisecapozzi@gmail.com',
+    logo: Email
+  },
+  {
+    id: 3,
+    contacto: '@GiselaCapozzi',
+    logo: Github
+  },
+  {
+    id: 4,
+    contacto: '@GiselaCapozzi',
+    logo: Linkedin
   }
 ]

@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
@@ -8,6 +11,13 @@ import cv from '../assets/cv_102350.png';
 import curriculum from '../assets/cv.png';
 
 export default function Home() {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  const verCurriculum = () => {
+    setIsVisible(!isVisible);
+  }
+
   return (
     <div className={`${styles.container}`}>
       <div className={`${styles.foto}`}>
@@ -39,20 +49,28 @@ export default function Home() {
         </Link>
         </div>
         <div className={`${styles.cv}`}>
-          <Link target='_blank' href='#'>
+          <a
+          onClick={verCurriculum}
+          prefetch={false}
+          >
           <Image
             src={cv}
             alt="cv"
           />
           <p>CV</p>
-        </Link>
+        </a>
         </div>
       </div>
       <div className={`${styles.curriculum}`}>
-        <Image 
+        {
+          isVisible &&
+          <Image 
           src={curriculum}
           alt='curriculum'
+          defaultValue={isVisible}
         />
+        }
+        
       </div>
     </div>
   )

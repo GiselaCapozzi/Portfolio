@@ -1,0 +1,150 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 320px 0 100px 0;
+  height: auto;
+}
+
+.titulo {
+  margin: 23px;
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email, .nombre, .mensaje {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 12px;
+}
+
+.formulario label {
+  text-transform: uppercase;
+  color: var(--color-titulo);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.formulario input {
+  padding: 12px;
+  text-align: center;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+  border-color: aquamarine;
+}
+
+.formulario input, .formulario textarea  {
+  width: auto;
+  border: none;
+  border-bottom: 3px solid var(--color-fondo-tarjeta);
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.formulario textarea {
+  resize: none;
+  width: 400px;
+  height: 200px;
+}
+
+.formulario input[type='submit'] {
+  border: none;
+  background-color: #2d5235;
+  width: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+.formulario input[type='submit']:hover {
+  background-color: #12471e;
+  font-weight: 600;
+}
+
+.separador {
+  width: 800px;
+  margin: 15px 0;
+  border-top: 2px solid #71aa8b;
+}
+
+.contactos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+
+.contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 7px 8px;
+}
+
+.contacto p {
+  margin-top: 7px;
+  font-size: 10px;
+}
+
+@media (max-width: 592px) {
+  .container {
+    margin-top: 200px;
+  }
+  
+  .inputs {
+    flex-direction: column;
+  }
+
+  .formulario label {
+    text-transform: uppercase;
+    color: var(--color-titulo);
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .formulario textarea {
+    resize: none;
+    width: 200px;
+    height: 200px;
+  }
+
+  .separador {
+    width: 300px;
+  }
+
+  .contactos {
+    width: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 8px;
+  }
+  
+  .contacto p {
+    margin-top: 7px;
+    font-size: 9px;
+  }
+}
