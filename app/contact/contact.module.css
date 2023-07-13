@@ -84,6 +84,11 @@
   border-top: 2px solid #71aa8b;
 }
 
+.container_contactos a {
+  text-decoration: none;
+  color: black;
+}
+
 .contactos {
   display: flex;
   align-items: center;

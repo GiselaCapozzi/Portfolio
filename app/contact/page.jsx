@@ -51,15 +51,16 @@ const Contact = () => {
       <div className={`${styles.contactos}`}>
         {
           contactos.map(contacto => (
-            <div key={contacto.id} className={`${styles.contacto}`}>
-              {/* <a> */}
+            <div key={contacto.id} className={`${styles.container_contactos}`}>
+              <a href='tel:+541160006045' className={`${styles.contacto}`} >
                 <Image
                   src={contacto.logo}
                   alt={contacto.id}
                   width={30}
-                  height={30} />
+                  height={30}
+                />
                 <p>{contacto.contacto}</p>
-              {/* </a> */}
+              </a>
             </div>
           ))
         }
