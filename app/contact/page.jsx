@@ -33,18 +33,22 @@ const Contact = () => {
     emailjs.sendForm('service_4usr38m', 'template_9a16x0m', form.current, key)
       .then(res => {
         Swal.fire({
-          position: 'bottom-right',
+          position: 'center',
           icon: 'success',
           title: 'El mensaje ha sido enviado correctamente',
-          timer: 2000
+          timer: 2000,
+          width: '22rem',
+          heightAuto: false
         })
         console.log(res.text);
       }, (error) => {
         Swal.fire({
-          position: 'bottom-right',
+          position: 'center',
           icon: 'error',
           title: 'El mensaje no ha podido ser enviado',
-          timer: 1500
+          timer: 1500,
+          width: '22rem',
+          heightAuto: false,
         })
         console.log(error.text)
       })

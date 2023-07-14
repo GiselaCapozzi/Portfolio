@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 320px;
+  margin: 380px 0 150px 0;
   height: auto;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .titulo {
-  color: var(--color-titulo);
+  color: #7a8d82;
   text-transform: uppercase;
 }
 
@@ -89,7 +89,7 @@
 
 @media (max-width: 592px) {
   .container {
-    margin-top: 180px;
+    margin-top: 220px;
   }
 
   .titulo {

@@ -4,13 +4,13 @@
   align-items: center;
   flex-direction: column;
   height: 150vh;
-  margin-top: 150px;
+  margin: 170px 0 150px 0;
 }
 
 .titulo {
   font-size: 35px;
   text-transform: uppercase;
-  color: #5F7066;
+  color: #7a8d82;
   font-weight: bold;
 }
 
@@ -70,7 +70,7 @@
 @media (max-width: 592px) {
   .container {
     height: auto;
-    margin-top: 200px;
+    margin: 250px 0 100px 0;
   }
 
   .container_tarjeta {

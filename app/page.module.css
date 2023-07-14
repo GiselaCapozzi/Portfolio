@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 280px;
+  margin: 300px 0 150px 0;
   height: auto;
 }
 
@@ -26,14 +26,14 @@
 .nombre h1 {
   text-transform: uppercase;
   text-shadow: 2px 2px 5px #73877B;
-  color: #5F7066;
+  color: #7a8d82;
   font-style: oblique;
   font-size: 55px;
   margin-bottom: 25px;
 }
 
 .nombre h4 {
-  color: #5F7066;
+  color: #7a8d82;
   font-size: 25px;
 }
 
@@ -99,7 +99,7 @@
 
 @media (max-width: 592px) {
   .container {
-    margin-top: 100px;
+    margin: 150px 0 100px 0;
     height: auto;
   }
 
@@ -120,7 +120,7 @@
   }
 
   .nombre h4 {
-    color: #5F7066;
+    color: #7a8d82;
     font-size: 15px;
   }
 

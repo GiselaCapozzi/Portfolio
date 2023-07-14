@@ -3,13 +3,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 320px 0 100px 0;
+  margin: 380px 0 100px 0;
   height: auto;
 }
 
 .titulo {
   margin: 23px;
   text-align: center;
+  color: #7a8d82;
 }
 
 .formulario {
@@ -17,6 +18,7 @@
   align-items: center;
   justify-content: center;
   width: 50vw;
+  background-color: #BDBBB6;
 }
 
 .inputs {
@@ -35,7 +37,7 @@
 
 .formulario label {
   text-transform: uppercase;
-  color: var(--color-titulo);
+  color: darkcyan;
   font-size: 15px;
   font-weight: 800;
 }
@@ -52,7 +54,7 @@
 .formulario input, .formulario textarea  {
   width: auto;
   border: none;
-  border-bottom: 3px solid var(--color-fondo-tarjeta);
+  border-bottom: 2px solid var(--color-titulo);
   background-color: transparent;
   font-size: 15px;
 }
@@ -80,13 +82,13 @@
 
 .separador {
   width: 800px;
-  margin: 15px 0;
+  margin: 40px 0;
   border-top: 2px solid #71aa8b;
 }
 
 .container_contactos a {
   text-decoration: none;
-  color: black;
+  color: darkcyan;
 }
 
 .contactos {
@@ -101,12 +103,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 69px 8px;
+  margin: 29px 8px;
 }
 
 .contacto p {
-  margin-top: 7px;
-  font-size: 10px;
+  font-size: 12px;
+  margin-top: 12px;
 }
 
 @media (max-width: 592px) {
@@ -116,6 +118,10 @@
   
   .inputs {
     flex-direction: column;
+  }
+
+  .formulario {
+    width: 80vw;
   }
 
   .formulario label {
@@ -150,6 +156,6 @@
   
   .contacto p {
     margin-top: 7px;
-    font-size: 9px;
+    font-size: 11px;
   }
 }

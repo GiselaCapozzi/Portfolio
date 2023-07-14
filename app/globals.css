@@ -117,6 +117,16 @@ a {
   padding: 0;
 }
 
-body {
+/* body {
   background-color: #F5E4D7;
+} */
+
+.light {
+  background-color: #F5E4D7;
+  color: #4E5D55;
+}
+
+.dark {
+  background-color: #343535;
+  color: #525252;
 }

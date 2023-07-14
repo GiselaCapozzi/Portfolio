@@ -67,6 +67,12 @@
   cursor: pointer;
 }
 
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width:676px) {
   .container {
     justify-content: center;
@@ -94,6 +100,10 @@
   }
 
   .links li a {
-    color: #444;
+    color: #888888;
+  }
+
+  .links>li a:hover {
+    color: #BDBBB6;
   }
 }
