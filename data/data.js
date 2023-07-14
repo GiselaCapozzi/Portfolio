@@ -99,22 +99,20 @@ export const proyectos = [
 export const contactos = [
   {
     id: 1,
-    contacto: '1160006045',
-    logo: Telefono
+    contacto: 'gisecapozzi@gmail.com',
+    logo: Email,
+    href: 'mailto:gisecapozzi@gmail.com?subject=SendMail&body=Description'
   },
   {
     id: 2,
-    contacto: 'gisecapozzi@gmail.com',
-    logo: Email
+    contacto: '@GiselaCapozzi',
+    logo: Github,
+    href: 'https://github.com/GiselaCapozzi?tab=repositories'
   },
   {
     id: 3,
     contacto: '@GiselaCapozzi',
-    logo: Github
-  },
-  {
-    id: 4,
-    contacto: '@GiselaCapozzi',
-    logo: Linkedin
+    logo: Linkedin,
+    href: 'https://www.linkedin.com/in/gisela-capozzi-3b4380181/'
   }
 ]
