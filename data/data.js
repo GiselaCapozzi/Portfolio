@@ -14,8 +14,8 @@ import Telefono from '../assets/phone.png';
 import Email from '../assets/email.png';
 import Github from '../assets/github.png';
 import Linkedin from '../assets/linkedin.png';
-
-
+import libreria from '../assets/libreria.png';
+import clima from '../assets/clima.png';
 
 export const skills = [
   {
@@ -92,7 +92,23 @@ export const proyectos = [
       skills[3], 
       skills[4], 
       skills[5], 
-      skills[7]]
+      skills[7],
+      skills[10]
+    ],
+    portada: libreria
+  },
+  {
+    id: 2,
+    nombre: 'Buscador del Clima',
+    url: 'https://climadeciudad.netlify.app/',
+    repo: 'https://github.com/GiselaCapozzi/AplicacionClima_React/tree/master',
+    lenguajes: [
+      skills[0],
+      skills[1],
+      skills[4],
+      skills[5],
+    ],
+    portada: clima
   }
 ];
 

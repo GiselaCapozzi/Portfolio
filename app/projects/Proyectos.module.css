@@ -2,13 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin: 380px 0 150px 0;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 100px 0 150px 0;
   height: auto;
+  width: 100vw;
 }
 
 .container_titulo {
-  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22rem;
 }
 
 .titulo {
@@ -20,7 +25,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 12px;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 50px;
   background-color: var(--color-fondo-recuadro);
   width: 80vw;
@@ -34,42 +40,47 @@
   flex-direction: column;
   width: 450px;
   height: 350px;
-  background-color: var(--color-fondo-tarjeta);
-  border-radius: 50px;
-  box-shadow: 7px 7px 5px #A0A99F;
+  margin-top: 12px;
+}
+
+.container_portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 0 12px;
 }
 
 .portada {
-  opacity: 100%;
+  width: 35vw;
+  height: 35%;
 }
 
 .container_lenguajes {
   display: flex;
-  position: absolute;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-bottom: 90px;
-  background-color: #E5D1D090;
-  padding: 12px;
+  flex-direction: row;
+  width: 200px;
 }
 
 .titulo_proyecto {
   color: #5F7066;
   margin-bottom: 15px;
   font-size: 25px;
+  text-align: center;
 }
 
 .botones {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 12px;
+  margin: 7px;
+  width: 200px;
 }
 
 .boton_repo, .boton_proyecto {
   border: none;
-  margin: 0 18px;
+  margin: 0 7px;
   padding: 7px;
   background-color: var(--color-fondo-recuadro);
   border-radius: 5px;
@@ -89,7 +100,15 @@
 
 @media (max-width: 592px) {
   .container {
-    margin-top: 220px;
+    margin: 10px 0 120px 0;
+    flex-direction: column;
+  }
+
+  .container_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14rem;
   }
 
   .titulo {
@@ -99,6 +118,7 @@
   .container_proyectos {
     margin-top: 7px;
     width: 60vw;
+    flex-wrap: nowrap;
   }
 
   .card_proyecto {
@@ -108,7 +128,8 @@
   }
 
   .portada {
-    width: 250px;
+    width: 16rem;
+    height: auto;
   }
 
   .boton_repo a, .boton_proyecto a {
