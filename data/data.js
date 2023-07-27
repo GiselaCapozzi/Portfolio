@@ -16,6 +16,7 @@ import Github from '../assets/github.png';
 import Linkedin from '../assets/linkedin.png';
 import libreria from '../assets/libreria.png';
 import clima from '../assets/clima.png';
+import peliculas from '../assets/pelicula.png';
 
 export const skills = [
   {
@@ -101,7 +102,7 @@ export const proyectos = [
     id: 2,
     nombre: 'Buscador del Clima',
     url: 'https://climadeciudad.netlify.app/',
-    repo: 'https://github.com/GiselaCapozzi/AplicacionClima_React/tree/master',
+    repo: 'https://github.com/GiselaCapozzi/AplicacionClima_React',
     lenguajes: [
       skills[0],
       skills[1],
@@ -109,6 +110,20 @@ export const proyectos = [
       skills[5],
     ],
     portada: clima
+  },
+  {
+    id: 3,
+    nombre: 'Aplicación de Películas',
+    url: 'https://pelisplay.netlify.app/',
+    repo: 'https://github.com/GiselaCapozzi/buscadorPeliculas_React',
+    lenguajes: [
+      skills[5],
+      skills[1],
+      skills[3],
+      skills[4],
+      skills[10]
+    ],
+    portada: peliculas
   }
 ];
 
