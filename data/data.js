@@ -84,6 +84,20 @@ export const skills = [
 export const proyectos = [
   {
     id: 1,
+    nombre: 'Aplicación de Películas',
+    url: 'https://destellodeluz.netlify.app',
+    repo: 'https://github.com/GiselaCapozzi/app_peliculas',
+    lenguajes: [
+      skills[5],
+      skills[1],
+      skills[3],
+      skills[4],
+      skills[10]
+    ],
+    portada: peliculas
+  },
+  {
+    id: 2,
     nombre: 'Cosmos Libreria',
     url: 'https://cosmoslibreria.netlify.app',
     repo: 'https://github.com/GiselaCapozzi/proyectoLibreria_Reactjs',
@@ -99,7 +113,7 @@ export const proyectos = [
     portada: libreria
   },
   {
-    id: 2,
+    id: 3,
     nombre: 'Buscador del Clima',
     url: 'https://climadeciudad.netlify.app/',
     repo: 'https://github.com/GiselaCapozzi/AplicacionClima_React',
@@ -111,20 +125,7 @@ export const proyectos = [
     ],
     portada: clima
   },
-  {
-    id: 3,
-    nombre: 'Aplicación de Películas',
-    url: 'https://pelisplay.netlify.app/',
-    repo: 'https://github.com/GiselaCapozzi/buscadorPeliculas_React',
-    lenguajes: [
-      skills[5],
-      skills[1],
-      skills[3],
-      skills[4],
-      skills[10]
-    ],
-    portada: peliculas
-  }
+  
 ];
 
 export const contactos = [

@@ -1,6 +1,5 @@
 import styles from './Navegacion.module.css';
 import Link from 'next/link';
-import ReactSwitch from 'react-switch';
 
 const links = [
   {
@@ -25,7 +24,7 @@ const links = [
   }
 ]
 
-const Navegacion = ({ theme, toggleTheme }) => {
+const Navegacion = () => {
   return (
     <div className={`${styles.container}`}>
       <div className={`${styles.container_links}`}>
@@ -41,15 +40,6 @@ const Navegacion = ({ theme, toggleTheme }) => {
             ))
           }
         </ul>
-        <div className={`${styles.switch}`}>
-          <ReactSwitch
-            onChange={toggleTheme}
-            checked={theme === 'light'}
-            height={20}
-            width={47}
-          />
-        </div>
-
       </div>
       <div className={`${styles.container_video}`}>
         <video

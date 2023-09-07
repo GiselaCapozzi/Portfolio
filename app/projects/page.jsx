@@ -14,6 +14,7 @@ const Proyectos = () => {
           proyectos.map(proyecto => (
             <div className={`${styles.container_proyectos}`}>
               <>
+                <h3 className={`${styles.titulo_proyecto}`}>{proyecto.nombre}</h3>
                 <div className={`${styles.container_portada}`}>
                   <Image
                     key={proyecto.id}
@@ -22,7 +23,6 @@ const Proyectos = () => {
                     className={`${styles.portada}`}
                   />
                 </div>
-                <h3 className={`${styles.titulo_proyecto}`}>{proyecto.nombre}</h3>
                 <div className={`${styles.container_lenguajes}`}>
                   <div>
                     {
@@ -30,8 +30,8 @@ const Proyectos = () => {
                         <Image
                           key={index}
                           src={lenguaje.imagen}
-                          width={20}
-                          height={20}
+                          width={30}
+                          height={30}
                           alt={lenguaje.id}
                         />
                       ))

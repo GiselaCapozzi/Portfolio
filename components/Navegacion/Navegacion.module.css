@@ -20,6 +20,7 @@
 
 .container_video {
   width: 100%;
+  z-index: -99;
 }
 
 .container_video video {
