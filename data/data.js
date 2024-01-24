@@ -10,13 +10,15 @@ import Mysql from '../assets/mysql.png';
 import Node from '../assets/node.png';
 import Git from '../assets/git.png';
 import Express from '../assets/express.png';
-import Telefono from '../assets/phone.png';
+import Redux from '../assets/redux.png';
+import Tailwindcss from '../assets/tailwind-css.png';
 import Email from '../assets/email.png';
 import Github from '../assets/github.png';
 import Linkedin from '../assets/linkedin.png';
 import libreria from '../assets/libreria.png';
 import clima from '../assets/clima.png';
 import peliculas from '../assets/pelicula.png';
+import biblioteca from '../assets/pagina_principal.jpg';
 
 export const skills = [
   {
@@ -78,12 +80,39 @@ export const skills = [
     id: 12,
     nombre: 'Express.js',
     imagen: Express,
+  },
+  {
+    id: 13,
+    nombre: 'Redux Toolkit',
+    imagen: Redux,
+  },
+  {
+    id: 14,
+    nombre: 'TailwindCSS',
+    imagen: Tailwindcss,
   }
 ];
 
 export const proyectos = [
   {
     id: 1,
+    nombre: 'Biblioteca Virtual',
+    url: 'https://libraryvirtual.netlify.app/',
+    repo: 'https://github.com/GiselaCapozzi/app-books',
+    lenguajes: [
+      skills[0],
+      skills[4],
+      skills[5],
+      skills[8],
+      skills[9],
+      skills[11],
+      skills[12],
+      skills[13]
+    ],
+    portada: biblioteca
+  },
+  {
+    id: 2,
     nombre: 'Aplicación de Películas',
     url: 'https://destellodeluz.netlify.app',
     repo: 'https://github.com/GiselaCapozzi/app_peliculas',
@@ -97,7 +126,7 @@ export const proyectos = [
     portada: peliculas
   },
   {
-    id: 2,
+    id: 3,
     nombre: 'Cosmos Libreria',
     url: 'https://cosmoslibreria.netlify.app',
     repo: 'https://github.com/GiselaCapozzi/proyectoLibreria_Reactjs',
@@ -113,7 +142,7 @@ export const proyectos = [
     portada: libreria
   },
   {
-    id: 3,
+    id: 4,
     nombre: 'Buscador del Clima',
     url: 'https://climadeciudad.netlify.app/',
     repo: 'https://github.com/GiselaCapozzi/AplicacionClima_React',

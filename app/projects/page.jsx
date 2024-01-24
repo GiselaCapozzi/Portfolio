@@ -30,9 +30,10 @@ const Proyectos = () => {
                         <Image
                           key={index}
                           src={lenguaje.imagen}
-                          width={30}
-                          height={30}
+                          width={40}
+                          height={40}
                           alt={lenguaje.id}
+                          style={{ marginLeft: '7px', marginRight: '7px' }}
                         />
                       ))
                     }
